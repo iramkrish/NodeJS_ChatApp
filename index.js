@@ -10,7 +10,7 @@ const server = app.listen("4000", () => {
 // static file from public directory
 app.use(express.static("public"));
 
-// socket setuo
+// socket setup
 const io = new socket(server);
 
 io.on("connection", socket => {
